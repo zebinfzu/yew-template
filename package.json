@@ -1,0 +1,30 @@
+{
+  "name": "template",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/main.rs",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass src/styles:src/styles --style compact --no-source-map && postcss src/style/**/*.css --dir dist",
+    "dev": "trunk serve",
+    "sass-watch": "sass --watch src/styles:src/styles --no-source-map",
+    "postcss-watch": "postcss src/styles/**/*.css --dir src/dist --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.19",
+    "postcss-cli": "^10.0.0",
+    "postcss-preset-env": "^7.8.3",
+    "postcss-pxtorem": "^6.0.0",
+    "sass": "^1.56.1",
+    "stylelint": "^14.15.0",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-standard": "^29.0.0"
+  },
+  "browserslist": [
+    "cover 99.5%"
+  ]
+}
